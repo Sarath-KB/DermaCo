@@ -1,0 +1,12 @@
+<script src="../Assets/JQ/jQuery.js"></script>
+<script>
+function getPlace(did)
+{
+	$.ajax({
+		url:"../Assets/AjaxPages/AjaxPlace.php?did="+did,
+		success: function(html){
+			$("#sel_place").html(html);
+		}
+	});
+}
+</script>
